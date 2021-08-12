@@ -110,12 +110,17 @@
     <br>
     <p>Check out the code files <a data-bs-toggle="tooltip" data-bs-placement="top" title="Link to the GitHub Repository" href="https://github.com/yasharth1/yasharth1.github.io">in this repository</a>
   </div>
-  <audio autoplay controls loop>
+  <audio id="anthem" autoplay controls loop>
     <source src="jan.mp3" type="audio/mp3">
 </audio>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
   <script>
+    audio = document.getElementById("anthem");
+    audio.onplay = function () {
+     alert("Go to the bottom of the page if you want to stop the national anthem"); 
+    }
+      
     $(document).ready(function (){
       $('body').fadeIn(1500).removeClass('hidden');
     });
