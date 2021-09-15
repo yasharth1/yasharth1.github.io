@@ -249,8 +249,8 @@
     <h1><em>"Winners never quit and quitters never win"<br>-Vince Lombardi</em></h1>
     <br>
   </div>
-  <audio onplay="speed()" controls autoplay loop>
-    <source id="audio" src="Jana_Gana_Mana_instrumental.ogg.mp3" type="audio/ogg">
+  <audio controls autoplay loop>
+    <source src="Jana_Gana_Mana_instrumental.ogg.mp3" type="audio/ogg">
   </audio>
   <script>
     new TypeIt("#type", {
@@ -274,9 +274,6 @@
 </body>
 </html>
 <script>
-  function speed() {
-    document.getElementById("audio").playbackRate = 1.25;
-  }
       $(document).ready(function (){
       $('body').fadeIn(1500).removeClass('hidden');
     });
